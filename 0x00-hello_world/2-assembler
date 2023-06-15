@@ -1,3 +1,17 @@
 #!/bin/bash
-gcc -S $CFILE
+
+# Get the C file name from the environment variable
+cfile=$CFILE
+
+# Check if the C file exists
+if [ ! -f "$cfile" ]; then
+  echo "Error: C file '$cfile' not found."
+  exit 1
+fi
+
+# Generate the assembly code and save it to the output file
+output_file="${cfile%.c}.s"
+gcc -S "$cfile" -o "$output_file"
+
+echo "Assembly code generated. Saved in '$output_file'."
 
