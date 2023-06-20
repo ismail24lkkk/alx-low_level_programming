@@ -9,6 +9,7 @@
  *
  * Return: 1 if + . 0 if 0 and -1 if -          
  */
+
 int print_sign(int n)
 {
     if (n > 0)
