@@ -1,1 +1,1 @@
-0x00. C - Hello, World
+0x07-pointers_arrays_strings
