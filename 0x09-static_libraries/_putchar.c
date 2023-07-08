@@ -4,8 +4,8 @@
 #include <ctype.h>
 #include <string.h>
 
-int _islower(int c)
+int _putchar(char c)
 {
-    return (c >= 'a' && c <= 'z');
+    return putchar(c);
 }
 
